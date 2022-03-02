@@ -16,9 +16,13 @@ function App() {
     { id: "e4", title: "Coffee", amount: 1, date: new Date(2022, 8, 12) },
   ];
 
+  const addExpenseHandler = expense => {
+    console.log(expense);
+  }
+
   return (
     <div>
-      <NewExpense></NewExpense>
+      <NewExpense onAddExpense = {addExpenseHandler}></NewExpense>
       <Expenses items={expenses}></Expenses>
 
       <HookExample></HookExample>
