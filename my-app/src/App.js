@@ -1,6 +1,6 @@
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
-
+import NewExpense from "./components/NewExpense/NewExpense";
 import HookExample from "./components/Hook/HookExample";
 
 function App() {
@@ -18,7 +18,9 @@ function App() {
 
   return (
     <div>
+      <NewExpense></NewExpense>
       <Expenses items={expenses}></Expenses>
+
       <HookExample></HookExample>
     </div>
   );
