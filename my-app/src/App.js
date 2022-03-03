@@ -13,7 +13,7 @@ const DUMMY_EXPENSES = [
     amount: 123,
     date: new Date(2021, 6, 26),
   },
-  { id: "e4", title: "Coffee", amount: 1, date: new Date(2020, 8, 12) },
+  { id: "e4", title: "Coffee", amount: 21, date: new Date(2020, 8, 12) },
 ];
 
 function App() {
