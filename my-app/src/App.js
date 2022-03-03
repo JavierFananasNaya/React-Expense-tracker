@@ -1,7 +1,7 @@
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
-import HookExample from "./components/Hook/HookExample";
+import HookExample from "./components/HookExample/HookExample";
 
 function App() {
   const expenses = [
@@ -16,13 +16,13 @@ function App() {
     { id: "e4", title: "Coffee", amount: 1, date: new Date(2022, 8, 12) },
   ];
 
-  const addExpenseHandler = expense => {
+  const addExpenseHandler = (expense) => {
     console.log(expense);
-  }
+  };
 
   return (
     <div>
-      <NewExpense onAddExpense = {addExpenseHandler}></NewExpense>
+      <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
       <Expenses items={expenses}></Expenses>
 
       <HookExample></HookExample>
